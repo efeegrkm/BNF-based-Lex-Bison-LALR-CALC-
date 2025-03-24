@@ -96,6 +96,7 @@ expr:
                            }
                          }
     | expr EXPONENT expr{$$ = pow($1,$3);}
+    | MINUS expr %prec EXPONENT { $$ = -$2; }  /* Negatif sayı desteği grammar eki */
     | LPAREN expr RPAREN { $$ = $2; }
     | NUMBER           { $$ = $1; }
     | IDENTIFIER       { $$ = lookup_symbol($1); free($1); }

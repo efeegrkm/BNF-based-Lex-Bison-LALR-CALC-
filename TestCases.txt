@@ -1,0 +1,7 @@
+Case 1: 23  +6-1 = 28 //basic
+Case 2: 22 *3+7 = 73 //basic
+Case 3: 22* (    3+7   ) = 220 //indentation changes
+Case 4: -12.12-32.3*4^0.1 = -49.20 //grammar negatif sayıları desteklemiyor ancak ben destekleyecek şekilde ekleme yaptım.Yani bu da çalışır
+Case 5: (2 ^ (2 * (2 + 2 / 2 - (0-5)))) = 65536 //complex parantesis
+Case 6: 21/(16    -2** 4) =  Hata: Divided by zero exception. Cevap: INF //division by zero and exponents
+Case 7: 90**2- = Syntax Error //Syntax error
